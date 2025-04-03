@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>167777</width>
+    <height>167777</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string extracomment="kjkjk"/>
+  </property>
+  <property name="statusTip">
+   <string extracomment="jkjkjk"/>
+  </property>
+  <property name="whatsThis">
+   <string extracomment="jkjk"/>
+  </property>
+  <property name="accessibleDescription">
+   <string extracomment="vbvcbvb"/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ==== GENERAL ==== */
+QWidget {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, sans-serif;
+    font-size: 12px;
+}
+
+/* ==== QPushButton ==== */
+QPushButton {
+    background-color: #3c3f41;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #505357;
+}
+QPushButton:pressed {
+    background-color: #2a2a2a;
+}
+
+/* ==== QLabel ==== */
+QLabel {
+    color: #dcdcdc;
+}
+
+/* ==== QLineEdit ==== */
+QLineEdit {
+    background-color: #3a3a3a;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+/* ==== QComboBox ==== */
+QComboBox {
+    background-color: #3a3a3a;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 4px;
+    color: #ffffff;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 1px solid #5a5a5a;
+}
+QComboBox QAbstractItemView {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    selection-background-color: #505357;
+}
+
+/* ==== QRadioButton ==== */
+QRadioButton {
+    spacing: 6px;
+}
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+}
+QRadioButton::indicator:unchecked {
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    background-color: #3a3a3a;
+}
+QRadioButton::indicator:checked {
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    background-color: #66aaff;
+}
+
+/* ==== QListWidget ==== */
+QListWidget {
+    background-color: #2f2f2f;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 4px;
+    color: #ffffff;
+}
+QListWidget::item:selected {
+    background-color: #505357;
+    color: white;
+}
+
+/* ==== QScrollBar (for QListWidgets, QTextEdit, etc.) ==== */
+QScrollBar:vertical {
+    background: #2d2d2d;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #505357;
+    border-radius: 4px;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QComboBox" name="Projectlist">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Select APP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nuke</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Maya</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Houdini</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QRadioButton" name="rbtn_shot">
+             <property name="text">
+              <string>Shot</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rbtn_asset">
+             <property name="text">
+              <string>Asset</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rbtn_fx">
+             <property name="text">
+              <string>Fx</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QComboBox" name="combo_sequence_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="combo_sequence_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="combo_object">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="Mayafiles">
+           <property name="styleSheet">
+            <string notr="true">QListWidget { background-color:rgba(37,37,37,40%);color:white;border-radius:5px;border: 1px solid white;}
+
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="FilePath">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> background-color:rgba(37,37,37,40%);color:white;border-radius:3px;border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string>Your file Path</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="Browse">
+          <property name="minimumSize">
+           <size>
+            <width>71</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;font-size: 13px;}
+QToolButton:hover{background-color:rgba(37,37,37,100%);}</string>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="GetRenderLayer">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;border: 1px solid white;}
+QPushButton:hover{background-color:rgba(37,37,37,100%);}</string>
+        </property>
+        <property name="text">
+         <string>Show Layers</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+        <item>
+         <widget class="QLabel" name="renderlayer">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Render Layer List :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="Render_layer_list">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QListWidget { background-color:rgba(37,37,37,40%);color:white;border-radius:5px;border: 1px solid white;}
+
+</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::MultiSelection</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0,0,0,0">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+           <item>
+            <widget class="QComboBox" name="SelectRenderer">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Select Renderer</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="Camera_list">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { background-color:rgba(37,37,37,40%);color:black;border-radius:3px;selection-background-color: rgba(37,37,37,40%);selection-color: black;}</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>50</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>Select Camera</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,1">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Frame range :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Auto_btn">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;}
+QPushButton:hover{background-color:rgba(37,37,37,100%);}</string>
+             </property>
+             <property name="text">
+              <string>Auto</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Manual_btn">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;}
+QPushButton:hover{background-color:rgba(37,37,37,100%);}</string>
+             </property>
+             <property name="text">
+              <string>Manual</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout" rowstretch="0,0" columnstretch="0,0" rowminimumheight="0,0">
+           <property name="horizontalSpacing">
+            <number>6</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>                                      Start Frame</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="StartFrame">
+             <property name="minimumSize">
+              <size>
+               <width>81</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>81</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"> background-color:rgba(37,37,37,40%);color:white;border-radius:3px;</string>
+             </property>
+             <property name="text">
+              <string>St Frm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>                                       End Frame</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="EndFrame">
+             <property name="minimumSize">
+              <size>
+               <width>81</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>81</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"> background-color:rgba(37,37,37,40%);color:white;border-radius:3px;</string>
+             </property>
+             <property name="text">
+              <string>En Frm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>30</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0">
+           <item>
+            <widget class="QPushButton" name="SubmiteRender_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;}
+QPushButton:hover{background-color:rgba(37,37,37,100%);}</string>
+             </property>
+             <property name="text">
+              <string>Submit job for each Render Layer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SubmiteRender">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton { background-color:rgba(37,37,37,40%);color:white;border-radius:3px;}
+QPushButton:hover{background-color:rgba(37,37,37,100%);}</string>
+             </property>
+             <property name="text">
+              <string>Submit Single job for all Render Layers</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
